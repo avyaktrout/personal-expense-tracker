@@ -26,13 +26,13 @@ A Flask-based web application for tracking and visualizing personal expenses. Us
 ## Screenshots
 
 ### Login Page
-![Login Page](screenshots/login.png)
+![Login Page](images/login.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](images/dashboard.png)
 
 ### Visualization
-![Visualization](screenshots/visualization.png)
+![Visualization](images/visualization.png)
 
 ## Installation Instructions
 
