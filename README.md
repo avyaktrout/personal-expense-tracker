@@ -47,4 +47,8 @@ Ensure you have the following installed:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/avyaktrout/personal-expense-tracker.git
+<<<<<<< HEAD
    cd personal-expense-tracker
+=======
+   cd personal-expense-tracker
+>>>>>>> b6d25af92d307f03a56058f35225517c166f11f0
