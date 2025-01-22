@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome, {{ session['username'] }}</h1>
+        <form id="expense-form" method="POST">
+            <input type="number" name="amount" id="amount" placeholder="Amount" required><br>
+            <input type="text" name="category" id="category" placeholder="Category" required><br>
+            <input type="date" name="date" id="date" required><br>
+            <button type="submit">Add Expense</button>
+        </form>
+        <h2>Your Expenses</h2>
+        <ul>
+            {% for expense in expenses %}
+            <li>{{ expense[3] }}: ${{ expense[2] }} on {{ expense[4] }}</li>
+            {% endfor %}
+        </ul>
+        <div class="actions">
+            <a href="/visualize" class="button">Visualize Spending</a>
+            <a href="/logout" class="button">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
